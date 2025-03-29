@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>간단한 웹페이지</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>환영합니다!</h1>
+    <p>이것은 간단한 웹페이지입니다.</p>
+    <button onclick="changeMessage()">메시지 변경</button>
+    <p id="message"></p>
+
+    <script>
+        function changeMessage() {
+            document.getElementById("message").innerText = "버튼이 클릭되었습니다!";
+        }
+    </script>
+</body>
+</html>
