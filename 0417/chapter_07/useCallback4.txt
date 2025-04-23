@@ -1,0 +1,19 @@
+import React, { useState, useCallback} from "react";
+ functionChild2({ onClick}) {
+ console.log("Child컴포넌트렌더링됨");
+ return<buttononClick={onClick}>버튼클릭</button>;
+ }
+ exportdefault functionApp() {
+ const [count, setCount] = useState(0);
+ // useCallback을사용하여함수메모이제이션
+consthandleClick= useCallback(() => {
+ console.log("버튼클릭됨");
+ }, []); // 의존성배열이비어있으므로처음생성된함수를재사용
+return(
+ <div>
+ <h1>Count: {count}</h1>
+ <buttononClick={() => setCount(count+ 1)}>카운트증가</button>
+ <ChildonClick={handleClick} />
+ </div>
+ );
+ }

@@ -1,0 +1,26 @@
+import React, { useState, useCallback, useMemo} from "react";
+ exportdefault functionApp3() {
+ const [query, setQuery] = useState("");
+ const [list] = useState(["Apple", "Banana", "Cherry", "Date"]);
+ // useMemo로리스트필터링최적화
+const filteredList= useMemo(() => {
+ console.log("필터링실행됨");
+ returnlist.filter((item) => 
+item.toLowerCase().includes(query.toLowerCase()));
+ }, [query, list]);
+  // useCallback으로이벤트핸들러최적화
+consthandleChange= useCallback((e) => {
+ setQuery(e.target.value);
+ }, []);
+ return(
+ <div>
+ <inputtype="text" value={query} onChange={handleChange} 
+placeholder="검색어입력" />
+ <ul>
+ {filteredList.map((item, index) => (
+ <likey={index}>{item}</li>
+ ))}
+ </ul>
+ </div>
+ );
+ }

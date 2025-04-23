@@ -1,0 +1,18 @@
+import React, { useState} from "react";
+ functionChild({ onClick}) {
+ console.log("Child컴포넌트렌더링됨");
+ return<buttononClick={onClick}>버튼클릭</button>;
+ }
+ exportdefaultfunctionApp() {
+ const [count, setCount] = useState(0);
+ consthandleClick= () => {
+ console.log("버튼클릭됨");
+ };
+ return(
+ <div>
+ <h1>Count: {count}</h1>
+ <buttononClick={() => setCount(count+ 1)}>카운트증가</button>
+ <ChildonClick={handleClick} />
+ </div>
+ );
+ }

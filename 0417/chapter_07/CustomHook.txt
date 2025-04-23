@@ -1,0 +1,77 @@
+ import { useState} from "react";
+ functionuseCounter(initialValue= 0) {
+ const [count, setCount] = useState(initialValue);
+ const increment= () => setCount(count+ 1);
+ constdecrement= () => setCount(count-1);
+ const reset= () => setCount(initialValue);
+ return{ count, increment, decrement, reset };
+ }
+ exportdefaultuseCounter;
+
+ 카운터 관리
+
+  import React from "react";
+ import useFetchfrom "./useFetch";
+ functionUsers() {
+ const { data, loading, error } = 
+useFetch("https://jsonplaceholder.typicode.com/users");
+ if (loading) return<p>Loading...</p>;
+ if (error) return<p>Error: {error.message}</p>;
+ return(
+ <ul>
+ {data.map((user) => (
+ <likey={user.id}>{user.name}</li>
+ ))}
+ </ul>
+ );
+ }
+ exportdefaultUsers;
+  import { useState, useEffect } from "react";
+ functionuseFetch(url) {
+ const [data, setData] = useState(null);
+ const [loading, setLoading] = useState(true);
+ const [error, setError] = useState(null);
+ useEffect(() => {
+ setLoading(true);
+ fetch(url)
+ .then((response) => response.json())
+ .then((data) => {
+ setData(data);
+ setLoading(false);
+ })
+ .catch((err) => {
+ setError(err);
+ setLoading(false);
+ });
+ }, [url]);
+ return{ data, loading, error };
+ }
+ exportdefaultuseFetch;
+
+ ApI 호출을 위한 커스텀 훅
+
+  import { useEffect, useRef } from "react";
+ functionusePrevious(value) {
+ const ref= useRef();
+ useEffect(() => {
+ ref.current= value;
+ }, [value]);
+ returnref.current;
+ }
+ exportdefaultusePrevious;
+  import React, { useState} from "react";
+ import usePreviousfrom "./usePrevious";
+ functionCounter() {
+ const [count, setCount] = useState(0);
+ constprevCount= usePrevious(count);
+ return(
+ <div>
+ <h2>현재값: {count}</h2>
+ <h2>이전값: {prevCount}</h2>
+ <buttononClick={() => setCount(count+ 1)}>+</button>
+ </div>
+ );
+ }
+ exportdefaultCounter;
+
+ 이전 상태 저장 커스텀 훅

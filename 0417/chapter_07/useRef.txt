@@ -1,0 +1,65 @@
+import { useRef, useEffect } from "react";
+ functionInputFocus() {
+ const inputRef= useRef(null);
+ useEffect(() => {
+ inputRef.current.focus();
+ }, []);
+ return<inputref={inputRef} type="text" />;
+ }
+ DOM 요소 접근하기
+
+ import { useRef, useState} from "react";
+ function Counter() {
+ constcountRef= useRef(0);
+ const [renderCount, setRenderCount] = useState(0);
+ const increment = () => {
+ countRef.current+= 1;
+ console.log("Ref 값:", countRef.current);
+ };
+ return (
+ <div>
+ <p>렌더링횟수: {renderCount}</p>
+ <button onClick={() => setRenderCount(renderCount+ 1)}>렌더트리거</button>
+ <button onClick={increment}>Ref 증가</button>
+ </div>
+ );
+ }
+
+리렌더링 없이 값 저장하기
+
+import { useRef, useEffect, useState} from "react";
+ function PreviousValue() {
+ const [count, setCount] = useState(0);
+ constprevCountRef= useRef();
+ useEffect(() => {
+ prevCountRef.current= count;
+ }, [count]);
+ return (
+ <div>
+ <p>현재값: {count}</p>
+ <p>이전값: {prevCountRef.current}</p>
+ <button onClick={() => setCount(count + 1)}>증가</button>
+ </div>
+ );
+ }
+ 이전 값 저장하기
+
+  import {useRef} from 'react';
+ function TextInputWithFocusButton(props) {
+ const inputElem = useRef(null);
+ const onButtonClick = () => {
+ // 'current'는 마운트된 input element를 가리킴
+inputElem.current.focus();
+ };
+ return (
+ <>
+ </>
+ );
+ }
+ <input ref={inputElem} type = "text" />
+ <button onClick={onButtonClick}>
+ Focus the input
+ </button>
+ export default TextInputWithFocusButton;
+
+ focus
