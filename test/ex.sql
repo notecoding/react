@@ -5,7 +5,6 @@ INSERT INTO users (name, username, password, is_admin) VALUES
 -- ✅ 카테고리
 INSERT INTO categories (name, `order`) VALUES
 ('자유게시판', 1),
-('질문답변', 2),
-('공지사항', 3);
+('질문답변', 2);
 
 
