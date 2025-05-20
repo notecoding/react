@@ -1,86 +1,25 @@
-ERROR in ./src/App.js 30:0-29
-Module not found: Error: Can't resolve './styles/styles.css' in 'C:\testtest\client\src'
-ERROR in ./src/components/CategoryManagementModal.jsx 8:0-32
-Module not found: Error: You attempted to import ../../styles/Modal.css which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
-You can either move it inside src/, or add a symlink to it from project's node_modules/.
-ERROR in ./src/components/CategoryManagementModal.jsx 9:0-64
-Module not found: Error: You attempted to import ../../context/CategoryContext which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
-You can either move it inside src/, or add a symlink to it from project's node_modules/.
-ERROR in ./src/components/Header.jsx 9:0-56
-Module not found: Error: You attempted to import ../../context/AuthContext which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
-You can either move it inside src/, or add a symlink to it from project's node_modules/.
-ERROR in ./src/components/Header.jsx 10:0-64
-Module not found: Error: You attempted to import ../../context/CategoryContext which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
-You can either move it inside src/, or add a symlink to it from project's node_modules/.
-ERROR in ./src/components/Header.jsx 11:0-33
-Module not found: Error: You attempted to import ../../styles/Header.css which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
-You can either move it inside src/, or add a symlink to it from project's node_modules/.
-ERROR in ./src/components/LoginModal.jsx 8:0-32
-Module not found: Error: You attempted to import ../../styles/Modal.css which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
-You can either move it inside src/, or add a symlink to it from project's node_modules/.
-ERROR in ./src/components/LoginModal.jsx 9:0-56
-Module not found: Error: You attempted to import ../../context/AuthContext which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
-You can either move it inside src/, or add a symlink to it from project's node_modules/.
-ERROR in ./src/components/RegisterModal.jsx 8:0-32
-Module not found: Error: You attempted to import ../../styles/Modal.css which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
-You can either move it inside src/, or add a symlink to it from project's node_modules/.
-ERROR in ./src/components/RegisterModal.jsx 9:0-56
-Module not found: Error: You attempted to import ../../context/AuthContext which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
-You can either move it inside src/, or add a symlink to it from project's node_modules/.
-ERROR in ./src/components/SearchModal.jsx 8:0-32
-Module not found: Error: You attempted to import ../../styles/Modal.css which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
-You can either move it inside src/, or add a symlink to it from project's node_modules/.
-ERROR in ./src/components/SearchModal.jsx 9:0-56
-Module not found: Error: You attempted to import ../../context/PostContext which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
-You can either move it inside src/, or add a symlink to it from project's node_modules/.
-ERROR in ./src/pages/Home.jsx 6:0-56
-Module not found: Error: You attempted to import ../../context/PostContext which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
-You can either move it inside src/, or add a symlink to it from project's node_modules/.
-ERROR in ./src/pages/Home.jsx 8:0-31
-Module not found: Error: You attempted to import ../../styles/Home.css which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
-You can either move it inside src/, or add a symlink to it from project's node_modules/.
-ERROR in ./src/pages/MainBoard.jsx 9:0-56
-Module not found: Error: You attempted to import ../../context/PostContext which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
-You can either move it inside src/, or add a symlink to it from project's node_modules/.
-ERROR in ./src/pages/MainBoard.jsx 10:0-64
-Module not found: Error: You attempted to import ../../context/CategoryContext which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
-You can either move it inside src/, or add a symlink to it from project's node_modules/.
-ERROR in ./src/pages/MainBoard.jsx 11:0-36
-Module not found: Error: You attempted to import ../../styles/MainBoard.css which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
-You can either move it inside src/, or add a symlink to it from project's node_modules/.
-ERROR in ./src/pages/PostDetail.jsx 9:0-36
-Module not found: Error: You attempted to import ../../api/axios which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
-You can either move it inside src/, or add a symlink to it from project's node_modules/.
-ERROR in ./src/pages/PostDetail.jsx 10:0-56
-Module not found: Error: You attempted to import ../../context/AuthContext which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
-You can either move it inside src/, or add a symlink to it from project's node_modules/.
-ERROR in ./src/pages/PostDetail.jsx 11:0-56
-Module not found: Error: You attempted to import ../../context/PostContext which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
-You can either move it inside src/, or add a symlink to it from project's node_modules/.
-ERROR in ./src/pages/PostDetail.jsx 12:0-37
-Module not found: Error: You attempted to import ../../styles/PostDetail.css which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
-You can either move it inside src/, or add a symlink to it from project's node_modules/.
-ERROR in ./src/pages/Profile.jsx 8:0-34
-Module not found: Error: You attempted to import ../../styles/Profile.css which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
-You can either move it inside src/, or add a symlink to it from project's node_modules/.
-ERROR in ./src/pages/Profile.jsx 9:0-56
-Module not found: Error: You attempted to import ../../context/AuthContext which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
-You can either move it inside src/, or add a symlink to it from project's node_modules/.
-ERROR in ./src/pages/Profile.jsx 10:0-56
-Module not found: Error: You attempted to import ../../context/PostContext which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
-You can either move it inside src/, or add a symlink to it from project's node_modules/.
-ERROR in ./src/pages/Profile.jsx 11:0-36
-Module not found: Error: You attempted to import ../../api/axios which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
-You can either move it inside src/, or add a symlink to it from project's node_modules/.
-ERROR in ./src/pages/WriteForm.jsx 9:0-56
-Module not found: Error: You attempted to import ../../context/PostContext which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
-You can either move it inside src/, or add a symlink to it from project's node_modules/.
-ERROR in ./src/pages/WriteForm.jsx 10:0-64
-Module not found: Error: You attempted to import ../../context/CategoryContext which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
-You can either move it inside src/, or add a symlink to it from project's node_modules/.
-ERROR in ./src/pages/WriteForm.jsx 11:0-56
-Module not found: Error: You attempted to import ../../context/AuthContext which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
-You can either move it inside src/, or add a symlink to it from project's node_modules/.
-ERROR in ./src/pages/WriteForm.jsx 12:0-36
-Module not found: Error: You attempted to import ../../styles/WriteForm.css which falls outside of the project src/ directory. Relative imports outside of src/ are not supported.
-You can either move it inside src/, or add a symlink to it from project's node_modules/.
+fetchPosts is not a function
+TypeError: fetchPosts is not a function
+    at http://localhost:3000/static/js/bundle.js:41355:5
+    at react-stack-bottom-frame (http://localhost:3000/static/js/bundle.js:21970:18)
+    at runWithFiberInDEV (http://localhost:3000/static/js/bundle.js:9889:68)
+    at commitHookEffectListMount (http://localhost:3000/static/js/bundle.js:14879:618)
+    at commitHookPassiveMountEffects (http://localhost:3000/static/js/bundle.js:14916:56)
+    at commitPassiveMountOnFiber (http://localhost:3000/static/js/bundle.js:15818:25)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/static/js/bundle.js:15809:104)
+    at commitPassiveMountOnFiber (http://localhost:3000/static/js/bundle.js:15858:9)
+    at recursivelyTraversePassiveMountEffects (http://localhost:3000/static/js/bundle.js:15809:104)
+    at commitPassiveMountOnFiber (http://localhost:3000/static/js/bundle.js:15817:9)
+ERROR
+fetchPosts is not a function
+TypeError: fetchPosts is not a function
+    at http://localhost:3000/static/js/bundle.js:41355:5
+    at react-stack-bottom-frame (http://localhost:3000/static/js/bundle.js:21970:18)
+    at runWithFiberInDEV (http://localhost:3000/static/js/bundle.js:9889:68)
+    at commitHookEffectListMount (http://localhost:3000/static/js/bundle.js:14879:618)
+    at commitHookPassiveMountEffects (http://localhost:3000/static/js/bundle.js:14916:56)
+    at reconnectPassiveEffects (http://localhost:3000/static/js/bundle.js:15872:9)
+    at recursivelyTraverseReconnectPassiveEffects (http://localhost:3000/static/js/bundle.js:15863:66)
+    at reconnectPassiveEffects (http://localhost:3000/static/js/bundle.js:15886:9)
+    at recursivelyTraverseReconnectPassiveEffects (http://localhost:3000/static/js/bundle.js:15863:66)
+    at reconnectPassiveEffects (http://localhost:3000/static/js/bundle.js:15871:9)
